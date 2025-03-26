@@ -1,16 +1,73 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+
+        .hero-image {
+            width: 70%;
+            height: 100%;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-content {
+            width: 30%;
+            padding: 2rem;
+            text-align: left;
+        }
+
+        .hero-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #666;
+        }
+
+        .explore-btn {
+            padding: 0.8rem 2rem;
+            background-color: #e60023;
+            color: white;
+            border-radius: 2rem;
+            text-decoration: none;
+            font-size: 1rem;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .explore-btn:hover {
+            background-color: #cc0020;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <div class="hero">
+        <div class="hero-image">
+            <img src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Scenic Lake with Mountains">
+        </div>
+        <div class="hero-content">
+            <h1>Welcome to my Pinterest clone</h1>
+            <p>Discover new inspiration and save your favorite ideas</p>
+            <a href="#" class="explore-btn">Explore now</a>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="./script.js"></script>
 </body>
-
 </html>
